@@ -47,3 +47,12 @@ const getDatePickerTitle = elem => {
       title: getDatePickerTitle(elem)
     });
   }
+
+  //slider
+  $( document ).ready(function() {
+    $('#qualitySlider').on('input', function(){
+         v = $('#qualitySlider').val();
+         console.log(v);
+         $('div.price').text(v);
+    });
+});
